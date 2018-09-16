@@ -120,6 +120,6 @@ pMiss <- pMiss[pMiss > 0]
 pMiss <- pMiss[order(pMiss, decreasing=T)]
 pMiss
 
-write.csv(train_test, 'C:/Users/User/Documents/Kaggle/Home Credit Default Risk/step1.csv', quote=F, na="", row.names=F)
+write.csv(train_test, '.../Documents/Kaggle/Home Credit Default Risk/step1.csv', quote=F, na="", row.names=F)
 
 #-----------------------------------------------------------------------------------------------------------------
