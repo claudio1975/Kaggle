@@ -8,15 +8,15 @@ library(data.table)
 
 cat("Loading data...\n")
 
-T1 <- fread("C:/Users/User/Documents/Kaggle/Home Credit Default Risk/blend/my_blend/WEIGHT_AVERAGE_RANK_sub1.csv",header = T, showProgress = F)
-T2 <- fread("C:/Users/User/Documents/Kaggle/Home Credit Default Risk/blend/my_blend/Blends1_0.798.csv",header = T, showProgress = F)
-T3 <- fread("C:/Users/User/Documents/Kaggle/Home Credit Default Risk/blend/my_blend/tidy_xgb_0.796.csv",header = T, showProgress = F)
-T4 <- fread("C:/Users/User/Documents/Kaggle/Home Credit Default Risk/blend/my_blend/sub_xgb_lgb_0.793.csv",header = T, showProgress = F)
-T5 <- fread("C:/Users/User/Documents/Kaggle/Home Credit Default Risk/blend/my_blend/sub_xgb2_0.792.csv",header = T, showProgress = F)
-T6 <- fread("C:/Users/User/Documents/Kaggle/Home Credit Default Risk/blend/my_blend/sub_lgb_kernel_0.788.csv",header = T, showProgress = F)
-T7 <- fread("C:/Users/User/Documents/Kaggle/Home Credit Default Risk/blend/my_blend/sub_pca_aec_xgb_0.778.csv",header = T, showProgress = F)
-T8 <- fread("C:/Users/User/Documents/Kaggle/Home Credit Default Risk/blend/my_blend/sub_pca_aec_gbm_0.705.csv",header = T, showProgress = F)
-T9 <- fread("C:/Users/User/Documents/Kaggle/Home Credit Default Risk/blend/my_blend/sub_rf_0.672.csv",header = T, showProgress = F)
+T1 <- fread(".../Documents/Kaggle/Home Credit Default Risk/blend/my_blend/WEIGHT_AVERAGE_RANK_sub1.csv",header = T, showProgress = F)
+T2 <- fread(".../Documents/Kaggle/Home Credit Default Risk/blend/my_blend/Blends1_0.798.csv",header = T, showProgress = F)
+T3 <- fread(".../Documents/Kaggle/Home Credit Default Risk/blend/my_blend/tidy_xgb_0.796.csv",header = T, showProgress = F)
+T4 <- fread(".../Documents/Kaggle/Home Credit Default Risk/blend/my_blend/sub_xgb_lgb_0.793.csv",header = T, showProgress = F)
+T5 <- fread(".../Documents/Kaggle/Home Credit Default Risk/blend/my_blend/sub_xgb2_0.792.csv",header = T, showProgress = F)
+T6 <- fread(".../Documents/Kaggle/Home Credit Default Risk/blend/my_blend/sub_lgb_kernel_0.788.csv",header = T, showProgress = F)
+T7 <- fread(".../Documents/Kaggle/Home Credit Default Risk/blend/my_blend/sub_pca_aec_xgb_0.778.csv",header = T, showProgress = F)
+T8 <- fread(".../Documents/Kaggle/Home Credit Default Risk/blend/my_blend/sub_pca_aec_gbm_0.705.csv",header = T, showProgress = F)
+T9 <- fread(".../Documents/Kaggle/Home Credit Default Risk/blend/my_blend/sub_rf_0.672.csv",header = T, showProgress = F)
 
 #--------------------------------------------------------------
 
@@ -55,7 +55,7 @@ head(blend_sub)
 
 cat("Submission...\n")
 
-write.csv(blend_sub, 'C:/Users/User/Documents/Kaggle/Home Credit Default Risk/blend/my_blend/my_blend_sub.csv', quote=F, na="", row.names=F)
+write.csv(blend_sub, 'my_blend_sub.csv', quote=F, na="", row.names=F)
 
 
 #scoring 0.799
